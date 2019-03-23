@@ -134,3 +134,5 @@ MonoBehaviour:
   multiplier: 0
   growth: 1
   timer: 10
+  name: Fire
+  description: Projectiles will help against enemies!

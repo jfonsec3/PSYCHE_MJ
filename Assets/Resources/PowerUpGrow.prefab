@@ -96,7 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growth: 1.3
   timer: 10
-  powerUp: {fileID: 0}
+  name: Shield
+  description: Can be damaged once!
 --- !u!58 &58915037051096250
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -118,6 +118,8 @@ MonoBehaviour:
   multiplier: 3
   growth: 1
   timer: 10
+  name: TimeWarp
+  description: Enemies are slowed down and you get a bonus!
 --- !u!58 &6666282675404541895
 CircleCollider2D:
   m_ObjectHideFlags: 0

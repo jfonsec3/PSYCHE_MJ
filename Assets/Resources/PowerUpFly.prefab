@@ -115,6 +115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7dbc4e6732786448a0e008cd51ab453, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: Fly
+  description: You can now jump 5 times!
 --- !u!58 &2832743410126174037
 CircleCollider2D:
   m_ObjectHideFlags: 0

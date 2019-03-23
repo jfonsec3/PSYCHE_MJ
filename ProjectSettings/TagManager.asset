@@ -10,6 +10,7 @@ TagManager:
   - Platform
   - End Flag
   - Block
+  - Bound
   layers:
   - Default
   - TransparentFX
