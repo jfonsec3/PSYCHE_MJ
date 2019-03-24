@@ -66,7 +66,7 @@ public class SatelliteBehaviorCH3 : MonoBehaviour
                         powerbar.stillMoving = false;
                         currentState = GameState.LAUNCH;
                     }
-                    print(powerbar.value);
+                    //print(powerbar.value);
                     break;
                 case GameState.LAUNCH:
                     traj.disappear();
