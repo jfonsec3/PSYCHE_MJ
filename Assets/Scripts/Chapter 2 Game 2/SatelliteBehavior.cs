@@ -60,7 +60,7 @@ public class SatelliteBehavior : MonoBehaviour {
             }
 
             //Normal on ground jump check
-            if (Input.GetButtonDown("Jump") && currentJumps < numberOfJumps)
+            if (Input.GetMouseButtonDown(0) && currentJumps < numberOfJumps)
             {
                 audio.playClip(2);
                 rb.velocity = Vector2.up * jumpForce;
@@ -86,7 +86,7 @@ public class SatelliteBehavior : MonoBehaviour {
     {
         Physics2D.queriesStartInColliders = false;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, 1.5f);
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetMouseButtonDown(0))
         {
            
             //Checking for wall jumping
