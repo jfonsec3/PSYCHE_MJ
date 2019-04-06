@@ -9,8 +9,8 @@ public class PowerUpFire : MonoBehaviour {
     public float timer = 10f;
     public string name;
     public string description;
+    public Text text;
 
-    private Text text;
     private CircleCollider2D cc;
     private SpriteRenderer sr;
 
@@ -20,7 +20,7 @@ public class PowerUpFire : MonoBehaviour {
 
     void Start()
     {
-        text = FindObjectOfType<Canvas>().GetComponentInChildren<Text>();
+        text = GameObject.Find("powerUpText").GetComponent<Text>();
         powerUp = FindObjectOfType<PowerUp>();
         cc = GetComponent<CircleCollider2D>();
         sr = GetComponent<SpriteRenderer>();

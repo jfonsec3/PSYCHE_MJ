@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class SatelliteBehavior : MonoBehaviour {
 
@@ -42,6 +44,12 @@ public class SatelliteBehavior : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        // No need to check for updates if game is paused.
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
+
         grounded = IsGrounded();
 
         //Checking for jumps

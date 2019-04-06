@@ -25,6 +25,9 @@ public class SatelliteBehaviorCH3 : MonoBehaviour
     private Audio audio;
     private GameState currentState;
 
+    [SerializeField]
+    private GameObject helperMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,10 +41,23 @@ public class SatelliteBehaviorCH3 : MonoBehaviour
         rb.gravityScale = 0;
         // Initial state
         currentState = GameState.TRAJECTORY_SELECTION;
+
+        //Helper menu initially.
+        helperMenu.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     void Update()
     {
+
+        // No need to update if paused
+        if(Time.timeScale == 0)
+        {
+            return;
+        }
+
+
+
         if (Input.GetMouseButtonDown(0)) // If the screen was clicked / tapped
         {
             switch (currentState)
@@ -90,6 +106,13 @@ public class SatelliteBehaviorCH3 : MonoBehaviour
             Vector2 vel = new Vector2(-Mathf.Sin(Mathf.Deg2Rad * angleValue), Mathf.Cos(Mathf.Deg2Rad * angleValue)) * powerValue * 2f;
             rb.MovePosition(rb.position + vel * Time.fixedDeltaTime);
         }    
+    }
+
+    public void FinishHelper()
+    {
+        helperMenu.SetActive(false);
+        prompt.PromptState(0);
+        Time.timeScale = 1f;
     }
 
     private Vector2 CalculatePosition(float elapsedTime)

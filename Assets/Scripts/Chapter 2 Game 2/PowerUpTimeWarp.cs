@@ -19,7 +19,7 @@ public class PowerUpTimeWarp : MonoBehaviour
 
     void Start()
     {
-        text = FindObjectOfType<Canvas>().GetComponentInChildren<Text>();
+        text = GameObject.Find("powerUpText").GetComponent<Text>();
         powerUp = FindObjectOfType<PowerUp>();
         cc = GetComponent<CircleCollider2D>();
         sr = GetComponent<SpriteRenderer>();

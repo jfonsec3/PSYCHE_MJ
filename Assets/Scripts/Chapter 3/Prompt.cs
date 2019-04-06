@@ -11,7 +11,6 @@ public class Prompt : MonoBehaviour
     void Start()
     {
         text = transform.GetChild(0).GetComponent<Text>();
-        PromptState(0);
     }
 
    public void PromptState(int state)
