@@ -148,7 +148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -269.6, y: 149.7}
+  m_AnchoredPosition: {x: -160, y: 120}
   m_SizeDelta: {x: 20, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98479721
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.24550715
+  m_Value: 0.24000001
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -837,7 +837,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: a0769f515e908ad4e8c6ddbd783563d5,
+      objectReference: {fileID: 12800000, guid: 42a0531d5a5b4a24fb8f2e2fe2c8df8d,
         type: 3}
     - target: {fileID: 4974543533884280162, guid: 7f55fbd0c87be7e438419727cd58cbc7,
         type: 3}
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7019608, g: 0.45098042, b: 0.12941177, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1126,8 +1126,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 9960729c93679e347b51152815ef3b7c, type: 3}
-    m_FontSize: 16
+    m_Font: {fileID: 12800000, guid: 42a0531d5a5b4a24fb8f2e2fe2c8df8d, type: 3}
+    m_FontSize: 12
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
